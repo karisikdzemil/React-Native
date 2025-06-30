@@ -10,7 +10,7 @@ function RouteGuard({ children }: { children: React.ReactNode }) {
       router.replace("/auth");
     }
   });
-  
+
   return <>{children}</>;
 }
 
