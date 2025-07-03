@@ -25,7 +25,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }
      const signIn = async (email: string, password: string) => {
         try{
-            await account.create(ID.unique(), email, password);
+            await account.create(ID.unique(), email, password)
             return null;
         }catch(error){
             if(error instanceof Error){
